@@ -73,23 +73,41 @@
 
                <div class="home__perfil">
                   <div class="home__image">
-                     <picture class="home__picture">
+                      <picture class="home__picture">
+                        <!-- WebP image for larger screens -->
                         <source
                           media="(min-width: 62.5em)"
                           srcset="./assets/img/lucas-5-desktop.webp"
+                          type="image/webp"
                         />
+                        <!-- PNG image for larger screens (fallback for browsers that do not support WebP) -->
+                        <source
+                          media="(min-width: 62.5em)"
+                          srcset="./assets/img/lucas-5-desktop.png"
+                          type="image/png"
+                        />
+                        <!-- WebP image for medium screens -->
                         <source
                           media="(min-width: 37.5em)"
                           srcset="./assets/img/lucas-5-tablet.webp"
+                          type="image/webp"
                         />
+                        <!-- PNG image for medium screens (fallback for browsers that do not support WebP) -->
+                        <source
+                          media="(min-width: 37.5em)"
+                          srcset="./assets/img/lucas-5-tablet.png"
+                          type="image/png"
+                        />
+                        <!-- WebP image for smaller screens and browsers that support it -->
                         <img
                           class="home__image"
                           src="./assets/img/lucas-5-mobile.webp"
-                          alt="picture of Adam Keyes"
-                          width-="220"
+                          alt="Picture of Adam Keyes"
+                          width="220"
                           height="390"
                         />
                       </picture>
+                      
                      <div class="home__shadow"></div>
                      <img src="assets/img/curved-arrow.svg" alt="" class="home__arrow">
                      <img src="assets/img/random-lines.svg" alt="" class="home__line">
@@ -112,8 +130,7 @@
 
                <div class="home__info">
                   <p class="home__description">
-                     <b>Email Developer</b>, with knowledge in email marketing, testing and design tools. 
-                     I offer the best projects resulting in quality work.
+                     <b>Email Developer & Content Editor</b> with knowledge in email marketing and how to handle CMS systems
                   </p>
 
                   <div class="home__btns">
@@ -143,19 +160,36 @@
                <div class="about__perfil">
                   <div class="about__image">
                      <picture class="about__picture">
+                        <!-- WebP image for larger screens -->
                         <source
                           media="(min-width: 62.5em)"
                           srcset="./assets/img/lucas-10-desktop.webp"
+                          type="image/webp"
                         />
+                        <!-- PNG image for larger screens (fallback for browsers that do not support WebP) -->
+                        <source
+                          media="(min-width: 62.5em)"
+                          srcset="./assets/img/lucas-10-desktop.png"
+                          type="image/png"
+                        />
+                        <!-- WebP image for medium screens -->
                         <source
                           media="(min-width: 37.5em)"
                           srcset="./assets/img/lucas-10-tablet.webp"
+                          type="image/webp"
                         />
+                        <!-- PNG image for medium screens (fallback for browsers that do not support WebP) -->
+                        <source
+                          media="(min-width: 37.5em)"
+                          srcset="./assets/img/lucas-10-tablet.png"
+                          type="image/png"
+                        />
+                        <!-- WebP image for smaller screens and browsers that support it -->
                         <img
                           class="about__img"
                           src="./assets/img/lucas-10-mobile.webp"
-                          alt="picture of Adam Keyes"
-                          width-="220"
+                          alt="Picture of Adam Keyes"
+                          width="220"
                           height="435"
                         />
                       </picture>
@@ -171,8 +205,8 @@
                <div class="about__info">
                   <p class="about__description">
                      Dedicated <b>web developer</b> with over a year of focused study. Recently expanding my skill 
-                     set to include <b>email development</b>. I have built several emails
-                     and have become familiar creating quality projects.
+                     set to include <b>email development & content editing</b>. I have built several emails and websites
+                     with responsive and good looking designs.
                   </p>
 
                   <!-- 
@@ -228,11 +262,11 @@
 
                   <!-- ========== RESUME ITEM 03 ========== -->
                   <div class="resume__item">
-                     <h3 class="resume__title">Codingphase Email developer path</h3>
+                     <h3 class="resume__title">Codingphase Email and Content Editor path</h3>
                      <span class="resume__date">2023</span>
                      <p class="resume__description">
                      Learned the fundamentals and the skills required in order to 
-                     be qualified to the Email Developer position.
+                     be qualified to the Email Developer and Content Editor.
                      </p>
                   </div>
                </div>
@@ -243,52 +277,59 @@
                   </h3>
                   <div class="resume__skills-content">
                      <span class="resume__skills-item">
-                        <img src="assets/img/html5.svg" alt="" class="resume__skills-img">
-                        <span class="resume__skills-name">HTML5</span>
+                        <img src="assets/img/html5.svg" title="HTML5" alt="" class="resume__skills-img">
                      </span>
                      <span class="resume__skills-item">
-                        <img src="assets/img/css3.svg" alt="" class="resume__skills-img">
-                        <span class="resume__skills-name">CSS3</span>
+                        <img src="assets/img/css3.svg" title="CSS3" alt="" class="resume__skills-img">
                      </span>
                      <span class="resume__skills-item">
-                        <img src="assets/img/javascript.svg" alt="" class="resume__skills-img">
-                        <span class="resume__skills-name">Javascript</span>
+                        <img src="assets/img/javascript.svg" title="Javascript" alt="" class="resume__skills-img">
                      </span>
                      <span class="resume__skills-item">
-                        <img src="assets/img/github.svg" alt="" class="resume__skills-img">
-                        <span class="resume__skills-name">Github</span>
+                        <img src="assets/img/github.svg" title="Git" alt="" class="resume__skills-img">
                      </span>
                      <span class="resume__skills-item">
-                        <img src="assets/img/sales-force-icon-9.svg" alt="" class="resume__skills-img">
-                        <span class="resume__skills-name">Salesforce</span>
+                        <img src="assets/img/sales-force-icon-9.svg" title="Salesforce" alt="" class="resume__skills-img">
+                     </span>
+                     <!--
+                     <span class="resume__skills-item">
+                        <img src="assets/img/mailchimp.svg" title="Mailchimp" alt="" class="resume__skills-img">
+                     </span>
+                     -->
+                     <span class="resume__skills-item">
+                        <img src="assets/img/klaviyo.svg" title="Klaviyo" alt="" class="resume__skills-img">
                      </span>
                      <span class="resume__skills-item">
-                        <img src="assets/img/mailchimp.svg" alt="" class="resume__skills-img">
-                        <span class="resume__skills-name">Mailchimp</span>
+                        <img src="assets/img/convertkit.svg" title="ConvertKit" alt="" class="resume__skills-img">
                      </span>
                      <span class="resume__skills-item">
-                        <img src="assets/img/klaviyo.svg" alt="" class="resume__skills-img">
-                        <span class="resume__skills-name">Klaviyo</span>
+                        <img src="assets/img/hubspot.svg" title="Hubspot" alt="" class="resume__skills-img">
                      </span>
                      <span class="resume__skills-item">
-                        <img src="assets/img/convertkit.svg" alt="" class="resume__skills-img">
-                        <span class="resume__skills-name">Convertkit</span>
+                        <img src="assets/img/mjml.svg" title="MJML" alt="" class="resume__skills-img">
                      </span>
                      <span class="resume__skills-item">
-                        <img src="assets/img/hubspot.svg" alt="" class="resume__skills-img">
-                        <span class="resume__skills-name">Hubspot</span>
+                        <img src="assets/img/litmus-logo.svg" title="Litmus" alt="" class="resume__skills-img">
                      </span>
                      <span class="resume__skills-item">
-                        <img src="assets/img/mjml.svg" alt="" class="resume__skills-img">
-                        <span class="resume__skills-name">MJML</span>
+                        <img src="assets/img/WordPress_blue_logo.svg" title="Wordpress" alt="" class="resume__skills-img">
                      </span>
                      <span class="resume__skills-item">
-                        <img src="assets/img/photoshop.svg" alt="" class="resume__skills-img">
-                        <span class="resume__skills-name">Photoshop</span>
+                        <img src="assets/img/WordPress_blue_logo.svg" title="Squarespace" alt="" class="resume__skills-img">
                      </span>
                      <span class="resume__skills-item">
-                        <img src="assets/img/figma.png" alt="" class="resume__skills-img">
-                        <span class="resume__skills-name">Figma</span>
+                        <img src="assets/img/WordPress_blue_logo.svg" title="Wix" alt="" class="resume__skills-img">
+                     </span>
+                     <!--
+                     <span class="resume__skills-item">
+                        <img src="assets/img/shopify-2.png" title="Shopify" alt="" class="resume__skills-img">
+                     </span>
+                     -->
+                     <span class="resume__skills-item">
+                        <img src="assets/img/photoshop.svg" title="Photoshop" alt="" class="resume__skills-img">
+                     </span>
+                     <span class="resume__skills-item">
+                        <img src="assets/img/figma.png" title="Figma" alt="" class="resume__skills-img">
                      </span>
                   </div>
                </div>
@@ -307,7 +348,7 @@
                   <div class="services__content">
                      <div class="services__icon">
                         <div class="services__box"></div>
-                        <i class="ri-layout-4-line"></i>
+                        <i class="ri-code-box-line"></i>
                      </div>
                      <h3 class="services__title">Web Development</h3>
                      <p class="services__description">
@@ -343,8 +384,38 @@
                      </div>
                      <h3 class="services__title">Design</h3>
                      <p class="services__description">
-                        I am well accustomed with using the main tools in figma and photoshop and have built 
-                        project with them.
+                        I am well accustomed with the fundamentals of photoshop and figma
+                     </p>
+                  </div>
+               </article>
+
+               <!-- ========== SERVICE 04 ========== -->
+               <article class="services__card">
+                  <div class="services__border"></div>
+                  <div class="services__content">
+                     <div class="services__icon">
+                        <div class="services__box"></div>
+                        <i class="ri-store-line"></i>
+                     </div>
+                     <h3 class="services__title">Email Marketing</h3>
+                     <p class="services__description">
+                       I have experience with ESPs, i'm can make segmentations, sequence, campaigns and creation 
+                       of assets.
+                     </p>
+                  </div>
+               </article>
+
+                <!-- ========== SERVICE 05 ========== -->
+                <article class="services__card">
+                  <div class="services__border"></div>
+                  <div class="services__content">
+                     <div class="services__icon">
+                        <div class="services__box"></div>
+                        <i class="ri-layout-4-line"></i>
+                     </div>
+                     <h3 class="services__title">CMS</h3>
+                     <p class="services__description">
+                        I have built stores and websites using various CMS systems that are responsive and with good design.
                      </p>
                   </div>
                </article>
@@ -362,25 +433,39 @@
                <div class="projects__item" data-filter='.promo'>Promotional</div>
                <div class="projects__item" data-filter='.news'>Newsletter</div>
                <div class="projects__item" data-filter='.trans'>Transactional</div>
-               <div class="projects__item" data-filter='.website'>Website</div>
+               <div class="projects__item" data-filter='.web'>Website</div>
+               <div class="projects__item" data-filter='.word'>Wordpress</div>
             </div>
             <div class="projects__container container grid">
-                  <!-- Project 01 -->
                   <article class="projects__card mix promo" >
                      <div class="projects__image">
                         <picture class="projects__picture">
+                           <!-- WebP image for larger screens -->
                            <source
                              media="(min-width: 62.5em)"
-                             srcset="./assets/img/project-1-big.webp"
+                             srcset="./assets/img/valentine-promo-big.webp"
+                             type="image/webp"
                            />
+                           <!-- PNG image for larger screens (fallback for browsers that do not support WebP) -->
+                           <source
+                             media="(min-width: 62.5em)"
+                             srcset="./assets/img/valentine-promo-big.png"
+                             type="image/png"
+                           />
+                           <!-- WebP image for smaller screens and browsers that support it -->
+                           <source
+                             srcset="./assets/img/valentine-promo-small.webp"
+                             type="image/webp"
+                           />
+                           <!-- PNG image for smaller screens and browsers that do not support WebP -->
                            <img
                              class="projects__img"
-                             src="./assets/img/project-1-small.webp"
+                             src="./assets/img/valentine-promo-small.png"
                              alt="Valentines Day Promotional Email"
-                             width-="350"
+                             width="350"
                              height="300"
                            />
-                         </picture>
+                        </picture>
                         <a href="#" class="projects__button">
                            <i class="ri-arrow-right-up-line"></i>
                         </a>
@@ -402,22 +487,139 @@
                      </div>
                   </article>
 
-                  <!-- Project 02 -->
-                  <article class="projects__card mix website">
+                  <article class="projects__card mix news">
                      <div class="projects__image">
                         <picture class="projects__picture">
+                        <!-- WebP image for larger screens -->
+                          <source
+                          media="(min-width: 62.5em)"
+                          srcset="./assets/img/coffee-news-big.webp"
+                          type="image/webp"
+                        />
+                        <!-- PNG image for larger screens (fallback for browsers that do not support WebP) -->
+                        <source
+                          media="(min-width: 62.5em)"
+                          srcset="./assets/img/coffee-news-big.png"
+                          type="image/png"
+                        />
+                        <!-- WebP image for smaller screens and browsers that support it -->
+                        <source
+                          srcset="./assets/img/coffee-news-small.webp"
+                          type="image/webp"
+                        />
+                        <!-- PNG image for smaller screens and browsers that do not support WebP -->
+                        <img
+                          class="projects__img"
+                          src="./assets/img/coffee-news-small.png"
+                          alt="Valentines Day Promotional Email"
+                          width="350"
+                          height="300"
+                        />
+                     </picture>
+
+                        <a href="#" class="projects__button">
+                           <i class="ri-arrow-right-up-line"></i>
+                        </a>
+                     </div>
+                     <div class="projects__content">
+                        <span class="projects__tag">Newsletter</span>
+                        <h3 class="projects__title">Coffee Shop Newsletter</h3>
+                        <p class="projects__description">
+                           A coffee shop newsletter presenting various dishes arriving this season.
+                        </p>
+                     </div>
+                     <div class="projects__buttons">
+                        <a href="https://lucasperrotaroriz.github.io/MailBakery-CoffeeBreak/" target="_blank" class="projects__link">
+                           <i class="ri-live-line"></i> View Project
+                        </a>
+                        <a href="https://github.com/LucasPerrotaRoriz/MailBakery-CoffeeBreak" target="_blank" class="projects__link" id="view" data-project="0">
+                           <i class="ri-github-line"></i> Code
+                        </a>
+                     </div>
+                  </article>
+            
+                  <article class="projects__card mix trans">
+                     <div class="projects__image">
+                         <picture class="projects__picture">
+                           <!-- WebP image for larger screens -->
                            <source
                              media="(min-width: 62.5em)"
-                             srcset="./assets/img/project-2-big.webp"
+                             srcset="./assets/img/money-trans-big.webp"
+                             type="image/webp"
                            />
+                           <!-- PNG image for larger screens (fallback for browsers that do not support WebP) -->
+                           <source
+                             media="(min-width: 62.5em)"
+                             srcset="./assets/img/money-trans-small.webp"
+                             type="image/png"
+                           />
+                           <!-- WebP image for smaller screens and browsers that support it -->
+                           <source
+                             srcset="./assets/img/money-trans-big.png"
+                             type="image/webp"
+                           />
+                           <!-- PNG image for smaller screens and browsers that do not support WebP -->
                            <img
                              class="projects__img"
-                             src="./assets/img/project-2-small.webp"
-                             alt="Luxurious Houses Retail Website"
-                             width-="350"
+                             src="./assets/img/money-trans-small.png"
+                             alt="Valentines Day Promotional Email"
+                             width="350"
                              height="300"
                            />
                          </picture>
+                         
+
+                        <a href="#" class="projects__button">
+                           <i class="ri-arrow-right-up-line"></i>
+                        </a>
+                     </div>
+                     <div class="projects__content">
+                        <span class="projects__tag">Transactional</span>
+                        <h3 class="projects__title">Money Transaction</h3>
+                        <p class="projects__description">
+                           A transactional email from bank company
+                        </p>
+                     </div>
+                     <div class="projects__buttons">
+                        <a href="https://lucasperrotaroriz.github.io/Money-Transactional-Email-01/" target="_blank" class="projects__link">
+                           <i class="ri-live-line"></i> View Project
+                        </a>
+                        <a href="https://github.com/LucasPerrotaRoriz/Money-Transactional-Email-01" target="_blank" class="projects__link" id="view" data-project="0">
+                           <i class="ri-github-line"></i> Code
+                        </a>
+                     </div>
+                  </article>
+
+                  <article class="projects__card mix web">
+                     <div class="projects__image">
+                         <picture class="projects__picture">
+                           <!-- WebP image for larger screens -->
+                           <source
+                             media="(min-width: 62.5em)"
+                             srcset="./assets/img/retail-site-big.png"
+                             type="image/webp"
+                           />
+                           <!-- PNG image for larger screens (fallback for browsers that do not support WebP) -->
+                           <source
+                             media="(min-width: 62.5em)"
+                             srcset="./assets/img/retail-site-small.webp"
+                             type="image/png"
+                           />
+                           <!-- WebP image for smaller screens and browsers that support it -->
+                           <source
+                             srcset="./assets/img/money-trans-big.png"
+                             type="image/webp"
+                           />
+                           <!-- PNG image for smaller screens and browsers that do not support WebP -->
+                           <img
+                             class="projects__img"
+                             src="./assets/img/retail-site-small.png"
+                             alt="Valentines Day Promotional Email"
+                             width="350"
+                             height="300"
+                           />
+                         </picture>
+
                         <a href="#" class="projects__button">
                            <i class="ri-arrow-right-up-line"></i>
                         </a>
@@ -439,154 +641,104 @@
                      </div>
                   </article>
 
-                  <!-- Project 03 -->
-                  <article class="projects__card mix trans">
+                  <article class="projects__card mix web">
                      <div class="projects__image">
-                        <picture class="projects__picture">
+                         <picture class="projects__picture">
+                           <!-- WebP image for larger screens -->
                            <source
                              media="(min-width: 62.5em)"
-                             srcset="./assets/img/project-3-big.webp"
+                             srcset="./assets/img/travel-site-big.webp"
+                             type="image/webp"
                            />
+                           <!-- PNG image for larger screens (fallback for browsers that do not support WebP) -->
+                           <source
+                             media="(min-width: 62.5em)"
+                             srcset="./assets/img/travel-site-big.png"
+                             type="image/png"
+                           />
+                           <!-- WebP image for smaller screens and browsers that support it -->
+                           <source
+                             srcset="./assets/img/travel-site-small.webp"
+                             type="image/webp"
+                           />
+                           <!-- PNG image for smaller screens and browsers that do not support WebP -->
                            <img
                              class="projects__img"
-                             src="./assets/img/project-3-small.webp"
-                             alt="Payment Transactional Email"
-                             width-="350"
+                             src="./assets/img/travel-site-big.png"
+                             alt="Valentines Day Promotional Email"
+                             width="350"
                              height="300"
                            />
                          </picture>
+                         
+
                         <a href="#" class="projects__button">
                            <i class="ri-arrow-right-up-line"></i>
                         </a>
                      </div>
                      <div class="projects__content">
-                        <span class="projects__tag">Transactional</span>
-                        <h3 class="projects__title">Money Transaction</h3>
+                        <span class="projects__tag">Website</span>
+                        <h3 class="projects__title">Travel Landing Page</h3>
                         <p class="projects__description">
-                           A transactional email from bank company
+                           Responsive landing page for a travel agency, with beautiful animations.
                         </p>
                      </div>
                      <div class="projects__buttons">
-                        <a href="https://lucasperrotaroriz.github.io/Money-Transactional-Email-01/" target="_blank" class="projects__link">
-                           <i class="ri-live-line"></i> View Project
-                        </a>
-                        <a href="https://github.com/LucasPerrotaRoriz/Money-Transactional-Email-01" target="_blank" class="projects__link" id="view" data-project="0">
-                           <i class="ri-github-line"></i> Code
+                        <a href="https://lucasperrotaroriz.com/crypto/" target="_blank" class="projects__link">
+                           <i class="ri-live-line"></i> View Site
                         </a>
                      </div>
                   </article>
                   
-                  <!-- Project 04 -->
-                  <article class="projects__card mix news">
+                  <article class="projects__card mix word">
                      <div class="projects__image">
-                        <picture class="projects__picture">
+                         <picture class="projects__picture">
+                           <!-- WebP image for larger screens -->
                            <source
                              media="(min-width: 62.5em)"
-                             srcset="./assets/img/project-4-big.webp"
+                             srcset="./assets/img/crypto-site-big.webp"
+                             type="image/webp"
                            />
+                           <!-- PNG image for larger screens (fallback for browsers that do not support WebP) -->
+                           <source
+                             media="(min-width: 62.5em)"
+                             srcset="./assets/img/valentine-promo-big.png"
+                             type="image/png"
+                           />
+                           <!-- WebP image for smaller screens and browsers that support it -->
+                           <source
+                             srcset="./assets/img/crypto-site-small.webp"
+                             type="image/webp"
+                           />
+                           <!-- PNG image for smaller screens and browsers that do not support WebP -->
                            <img
                              class="projects__img"
-                             src="./assets/img/project-4-small.webp"
-                             alt="Lunchbox For Students Newsletter Email"
-                             width-="350"
+                             src="./assets/img/valentine-promo-big.png"
+                             alt="Valentines Day Promotional Email"
+                             width="350"
                              height="300"
                            />
                          </picture>
+                         
+
                         <a href="#" class="projects__button">
                            <i class="ri-arrow-right-up-line"></i>
                         </a>
                      </div>
                      <div class="projects__content">
-                        <span class="projects__tag">Newsletter</span>
-                        <h3 class="projects__title">Lunchbox for students</h3>
+                        <span class="projects__tag">Wordpress</span>
+                        <h3 class="projects__title">Crypto Marketplace Landing Page</h3>
                         <p class="projects__description">
-                           A newsletter with a variety of lunchbox recipes for school
+                           Responsive landing page for a crypto marketplace. Designed with elementor.
+                           
                         </p>
                      </div>
                      <div class="projects__buttons">
-                        <a href="https://lucasperrotaroriz.github.io/Lunchbox-Newsletter-Email-01/" target="_blank" class="projects__link">
-                           <i class="ri-live-line"></i> View Project
-                        </a>
-                        <a href="https://github.com/LucasPerrotaRoriz/Lunchbox-Newsletter-Email-01" target="_blank" class="projects__link" id="view" data-project="0">
-                           <i class="ri-github-line"></i> Code
+                        <a href="https://lucasperrotaroriz.com/crypto/" target="_blank" class="projects__link">
+                           <i class="ri-live-line"></i> View Site
                         </a>
                      </div>
                   </article>
-
-                  <!-- Project 05 -->
-                  <article class="projects__card mix news">
-                     <div class="projects__image">
-                        <picture class="projects__picture">
-                           <source
-                             media="(min-width: 62.5em)"
-                             srcset="./assets/img/project-5-big.webp"
-                           />
-                           <img
-                             class="projects__img"
-                             src="./assets/img/project-5-small.webp"
-                             alt="Coffee Shop Newsletter Email"
-                             width-="350"
-                             height="300"
-                           />
-                         </picture>
-                        <a href="#" class="projects__button">
-                           <i class="ri-arrow-right-up-line"></i>
-                        </a>
-                     </div>
-                     <div class="projects__content">
-                        <span class="projects__tag">Newsletter</span>
-                        <h3 class="projects__title">Coffee restaurant newsletter</h3>
-                        <p class="projects__description">
-                           A coffee shop newsletter presenting various dishes arriving this season.
-                        </p>
-                     </div>
-                     <div class="projects__buttons">
-                        <a href="https://lucasperrotaroriz.github.io/MailBakery-CoffeeBreak/" target="_blank" class="projects__link">
-                           <i class="ri-live-line"></i> View Project
-                        </a>
-                        <a href="https://github.com/LucasPerrotaRoriz/MailBakery-CoffeeBreak" target="_blank" class="projects__link" id="view" data-project="0">
-                           <i class="ri-github-line"></i> Code
-                        </a>
-                     </div>
-                  </article>
-
-                  <!-- Project 06 -->
-                  <article class="projects__card mix promo">
-                     <div class="projects__image">
-                        <picture class="projects__picture">
-                           <source
-                             media="(min-width: 62.5em)"
-                             srcset="./assets/img/project-6-big.webp"
-                           />
-                           <img
-                             class="projects__img"
-                             src="./assets/img/project-6-small.webp"
-                             alt="Easter Cosmetic Promo Email"
-                             width-="350"
-                             height="300"
-                           />
-                         </picture>
-                        <a href="#" class="projects__button">
-                           <i class="ri-arrow-right-up-line"></i>
-                        </a>
-                     </div>
-                     <div class="projects__content">
-                        <span class="projects__tag">Promotional</span>
-                        <h3 class="projects__title">Easter cosmetics promo sale</h3>
-                        <p class="projects__description">
-                           Easter sale for a cosmetic company 
-                        </p>
-                     </div>
-                     <div class="projects__buttons">
-                        <a href="https://lucasperrotaroriz.github.io/Easter-Promotional-Email-01/" target="_blank" class="projects__link">
-                           <i class="ri-live-line"></i> View Project
-                        </a>
-                        <a href="https://github.com/LucasPerrotaRoriz/Easter-Promotional-Email-01" target="_blank" class="projects__link" id="view" data-project="0">
-                           <i class="ri-github-line"></i> Code
-                        </a>
-                     </div>
-                  </article>
-
 
                   <!-- ========== MODAL ==========
                   <div class="modal__container">
