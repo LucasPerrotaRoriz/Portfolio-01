@@ -87,6 +87,8 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  object-position: center;
+  object-fit: cover;
 }
 
 /*=============== THEME ===============*/
@@ -1689,6 +1691,10 @@ body.dark-theme {
 
   .contact__link:hover {
     background-color: var(--first-color);
+  }
+  
+  .contact__link:hover::after {
+    width: 0%;
   }
 
   .contact__link.active-link::after  {

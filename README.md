@@ -1,15 +1,40 @@
-# Responsive Portfolio Website Rian
-## [Watch it on youtube](https://youtu.be/-uQIBlaZ4P0)
-### Responsive Portfolio Website Rian
+# Responsive Portfolio
 
-- Responsive Personal Portfolio Website Using HTML CSS & JavaScript
-- Contains animations when scrolling.
-- Smooth scrolling in each section.
-- Includes a dark & light theme.
-- Sending emails in the contact section.
-- Developed first with the Mobile First methodology, then for desktop.
-- Compatible with all mobile devices and with a beautiful and pleasant user interface.
+# My Awesome Project
+This is my portfolio showing my projects and skills. Check out!
 
-💙 Join the channel to see more videos like this. [Bedimcode](https://www.youtube.com/@Bedimcode)
+<a href="https://www.lucasperrotaroriz.com/" target="_blank">**Link to project:** </a>
 
-![preview img](/preview.png)
+## Desktop View
+
+
+## Mobile View
+
+
+## How It's Made:
+**Tech used:** HTML, CSS, JavaScript, MixupJS, ScrollRevealJS, EmailJS.
+
+## Optimizations
+
+In the future i will make the website simpler and more concise.
+
+## Lessons Learned:
+
+* Mobile first approach
+* BEM and code organization
+* Implementing dark mode
+* Mobile navigation animation
+* Image optimization
+* Contact form that works with EmailJS
+
+<!-- 
+## Examples:
+Take a look at these couple examples that I have in my own portfolio:
+
+**Palettable:** https://github.com/alecortega/palettable
+
+**Twitter Battle:** https://github.com/alecortega/twitter-battle
+
+**Patch Panel:** https://github.com/alecortega/patch-panel
+
+-->
